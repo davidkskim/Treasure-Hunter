@@ -6,45 +6,77 @@
   <link rel="icon" href="https://freesvg.org/img/Gold-coin-2017072636.png">
   <link rel="stylesheet" href="treasurehunt.css">
   <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@500&display=swap" rel="stylesheet">
+
 </head>
+
+
 <body>
-  <div id="wrapper">
-    <h1 id = "#Top">Treasure Hunt</h1>
-    <img src="https://pngimg.com/uploads/treasure_chest/treasure_chest_PNG78.png" alt="Treasure Chest Pic" height="200px">
-    <h4>How to Play</h4>
-    <ul>
-      <li>Click on the random squares and look for the rainbow treasure!</li>
-      <li>Try to avoid the bomb.</li>
-      <li>If you find nothing, a tree will appear.</li>
-      <li>Try to win within 6 turns! Good luck and have fun!</li>
-    </ul>
+  <h1 id= "#top" class="ml3" color:black>At World's End</h1>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <img class="center" src="https://lh3.googleusercontent.com/proxy/jl37QiJS9jgRVsu5MRObtSRB7pbzGsDCUPnPiNIDmBtaVuo4h054P6tdRpfoWeFuFP-73DZi8dqs3s7kA8jh-yOJMpB8O66A0_YX_X6ULZ8bSFzAaQdqbQkM7gd8j0NNS84APY5nxnwNc2qaRbb72P5HUPFsrA" alt="Jolly Roger" style="width:300px;height:300px;">
 
-    <h5 id= "counter"># of clicks: 0</h5>
 
-    <table id= "gameBoard">
-      <tr>
-        <td id="0" onclick="treasure(0)";>?</td>
-        <td id="1" onclick="treasure(1)";>?</td>
-        <td id="2" onclick="treasure(2)";>?</td>
-      </tr>
-      <tr>
-        <td id="3" onclick="treasure(3)";>?</td>
-        <td id="4" onclick="treasure(4)";>?</td>
-        <td id="5" onclick="treasure(5)";>?</td>
-      </tr>
-      <tr>
-        <td id="6" onclick="treasure(6)";>?</td>
-        <td id="7" onclick="treasure(7)";>?</td>
-        <td id="8" onclick="treasure(8)";>?</td>
-      </tr>
-    </table>
-    <button type="button" onclick="location.reload()">Restart Game</button>
-    <footer>
-      <p>Created by David, Vivean, and Diem</p>
-      <a href="#Top">Return to Top</a>
-      <a href="https://goldprice.org/" target="_blank">Find out the price of gold!</a>
-    </footer>
-  </div>
+  <h4 id="ruleHead" class="center">How to Play</h4>
+  <ul id= "rules">
+    <li>Click on a jar of dirt to look for Davy Jones's heart!</li>
+    <li>Watch out for the jar with the toxic octopus inside.</li>
+    <li>Try to win within 15 turns!</li>
+  </ul>
+
+
+  <h5 id= "counter" class="center"># of turns: 0</h5>
+
+  <table id= "gameBoard" class="center">
+    <tr>
+      <td id="0" onclick="treasure(0)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+      <td id="1" onclick="treasure(1)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+      <td id="2" onclick="treasure(2)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+      <td id="3" onclick="treasure(3)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+      <td id="4" onclick="treasure(4)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+    </tr>
+    <tr>
+      <td id="5" onclick="treasure(5)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+      <td id="6" onclick="treasure(6)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+      <td id="7" onclick="treasure(7)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+      <td id="8" onclick="treasure(8)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+      <td id="9" onclick="treasure(9)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+    </tr>
+    <tr>
+      <td id="10" onclick="treasure(10)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+      <td id="11" onclick="treasure(11)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+      <td id="12" onclick="treasure(12)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+      <td id="13" onclick="treasure(13)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+      <td id="14" onclick="treasure(14)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+    </tr>
+    <tr>
+      <td id="15" onclick="treasure(15)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+      <td id="16" onclick="treasure(16)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+      <td id="17" onclick="treasure(17)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+      <td id="18" onclick="treasure(18)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+      <td id="19" onclick="treasure(19)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+    </tr>
+    <tr>
+      <td id="20" onclick="treasure(20)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+      <td id="21" onclick="treasure(21)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+      <td id="22" onclick="treasure(22)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+      <td id="23" onclick="treasure(23)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+      <td id="24" onclick="treasure(24)";><img src="https://storage.needpix.com/rsynced_images/sand-575721_1280.png"></img></td>
+    </tr>
+  </table>
+
+  <button id="button" class="center" type="button" onclick="location.reload()">Restart Game</button>
+
+  <hr style="height:5px;border-width:0;color:white;background-color:white">
+
+  <footer id="bottom">
+    <p style=color:white>Created by: David, Vivean, and Diem</p>
+    <a class="end" href="#top">Return to Top</a>
+    <div>
+      <a class="end" href="https://youtu.be/E9xobAxHg0w?t=21" target="_blank">Find out what the dirt is for :)</a>
+    </div>
+  </footer>
+
   <script type="text/javascript" src="treasurehunt.js"></script>
 </body>
 </html>

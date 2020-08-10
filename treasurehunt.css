@@ -1,19 +1,89 @@
 *{
   font-family: 'Bree Serif', serif;
-  color: white;
+}
+
+#\#top{
+  text-align: center;
+  font-family: 'Inknut Antiqua', serif;
+  color: black;
+}
+
+.ml3 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+div{
+  display: flex;
+  justify-content: center;
 }
 
 body{
-  background-image: url(https://images.unsplash.com/photo-1564845654222-d437f029c5c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80);
-  height: 1000px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Spanish_Galleon_shipwreck_at_Port-Na_Spaniagh_1588.jpg/1280px-Spanish_Galleon_shipwreck_at_Port-Na_Spaniagh_1588.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  background-attachment: scroll;
 
 }
 
-/* #wrapper{
+.center{
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-} */
+}
+
+#ruleHead{
+  font-size: 150%;
+  color: white;
+}
+
+#rules{
+  font-size: 125%;
+  list-style-position: inside;
+  margin-left: 400px;
+  color: white;
+}
+
+#counter{
+  font-size: 150%;
+  color: white;
+}
+
+img {
+  height: 104px;
+  width: 104px;
+}
+
+td{
+  border: 5px solid black;
+}
+
+}
+td:hover {background-color:#755b12;}
+
+#button {
+  background-color: white;
+  color: black;
+  transition-duration: 0.4s;
+  width: 10%;
+  border-radius: 12px;
+}
+
+#button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+#bottom{
+  position: relative;
+  bottom: 20px;
+  left: 10px;
+}
+
+.end{
+  color: #37db1a;
+}
